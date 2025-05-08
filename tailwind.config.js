@@ -9,6 +9,7 @@ export default {
           {
             lineHeight: "140%",
             letterSpacing: "-0.005em",
+            fontWeight: 700,
           },
         ],
 
@@ -17,6 +18,7 @@ export default {
           {
             lineHeight: "140%",
             letterSpacing: "-0.005em",
+            fontWeight: 700,
           },
         ],
 
@@ -25,6 +27,7 @@ export default {
           {
             lineHeight: "150%",
             letterSpacing: "0em",
+            fontWeight: 600,
           },
         ],
 
@@ -33,6 +36,7 @@ export default {
           {
             lineHeight: "150%",
             letterSpacing: "0em",
+            fontWeight: 600,
           },
         ],
 
@@ -41,6 +45,7 @@ export default {
           {
             lineHeight: "150%",
             letterSpacing: "0em",
+            fontWeight: 500,
           },
         ],
 
@@ -49,6 +54,7 @@ export default {
           {
             lineHeight: "140%",
             letterSpacing: "0.2px",
+            fontWeight: 500,
           },
         ],
 
@@ -57,8 +63,13 @@ export default {
           {
             lineHeight: "140%",
             letterSpacing: "0.2px",
+            fontWeight: 500,
           },
         ],
+      },
+
+      fontFamily: {
+        pretendard: ["Pretendard", "sans-serif"],
       },
 
       fontWeight: {
