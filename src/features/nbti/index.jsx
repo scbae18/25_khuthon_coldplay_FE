@@ -7,13 +7,13 @@ import ResultCard from "./ui/ResultCard";
 export default function Nbti() {
   const { currentIndex, answers, addAnswer, nextQuestion } = useNbtiStore();
 
-  const handleAnswer = (value) => {
-    addAnswer(value);
+  const handleAnswer = (value, type) => {
+    addAnswer(type, value);  // type을 추가해서 답변을 각 축에 맞게 처리
     nextQuestion();
   };
 
   if (currentIndex >= questions.length) {
-    return <ResultCard answers={answers} />;
+    return <ResultCard />;
   }
 
   return (
@@ -21,7 +21,7 @@ export default function Nbti() {
       <QuestionCard
         question={questions[currentIndex].text}
         options={questions[currentIndex].options}
-        onAnswer={handleAnswer}
+        onAnswer={(value) => handleAnswer(value, questions[currentIndex].type)}
         step={currentIndex + 1}
         total={questions.length}
       />
