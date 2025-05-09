@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    body {
-      @apply font-pretendard;
-    }
+  body {
+    font-family: 'Pretendard', sans-serif;
   }
-}
+} 
 
 @font-face {
   font-family: "Pretendard";
