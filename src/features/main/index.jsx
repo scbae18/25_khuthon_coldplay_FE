@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { MainHeader } from "../../shared/ui/Header";
+import { TopHeader } from "../../shared/ui/Header";
 //import Header from "../../shared/ui/header";
 //import Footer from "../../shared/ui/Footer/footer";
 //import WrappedTabs from "./ui/Tabbar/wrappedTabs";
@@ -9,6 +11,7 @@ export default function Main() {
   
   return (
     <>
+      <MainHeader />
       <h1>TEST</h1>
     </>
   );
