@@ -1,5 +1,30 @@
-<div className="flex h-dvh w-full justify-center">
-      <div className="flex w-full max-w-[600px] flex-col bg-background">
-        <p className="w-6 h-6 bg-red-500 text-red">fadsfasd</p>
-      </div>
-</div>
+import React from "react";
+import styled from "styled-components";
+import GlobalStyle from "./GlobalStyle"; // styled-components용 글로벌 스타일
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3498db;
+`;
+
+const Title = styled.h1`
+  font-size: 4rem;
+  color: white;
+  font-family: "Pretendard", sans-serif;
+`;
+
+function App() {
+  return (
+    <>
+      <GlobalStyle /> {/* 글로벌 스타일 적용 */}
+      <Container>
+        <Title>Styled-components Example</Title>
+      </Container>
+    </>
+  );
+}
+
+export default App;
